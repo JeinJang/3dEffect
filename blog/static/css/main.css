@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .container {
     text-align: center;
     width: 100%;
@@ -6,22 +13,36 @@
 }
 
 .row {
+    position: relative;
     margin: 0;
     padding: 0;
 }
 
+.title_row {
+    margin-bottom: 100px;
+}
+
 h1 {
+    margin: 0;
     color: blue;
+    font-family: 'GmarketSansBold';
+}
+
+p {
+    margin: 0;
+    color: white;
 }
 
 /*퍼온 거*/
 body {
+  overflow-y: scroll;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
   width: 100%;
   height: 100vh;
+  background-color: black;
 }
 
 .animation-wrapper {
@@ -38,8 +59,77 @@ body {
   margin: -290px 0 0 -290px;
 }
 
+.sphere-animation svg {
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
 .sphere path {
-  fill: url(#sphereGradient);
   stroke: none;
   backface-visibility: hidden;
+}
+
+#part1 path {
+  fill: url(#sphereGradient1);
+}
+#part2 path {
+  fill: url(#sphereGradient2);
+}
+#part3 path {
+  fill: url(#sphereGradient3);
+}
+#part4 path {
+  fill: url(#sphereGradient4);
+}
+#part5 path {
+  fill: url(#sphereGradient5);
+}
+#part6 path {
+  fill: url(#sphereGradient6);
+}
+#part7 path {
+  fill: url(#sphereGradient7);
+}
+#part8 path {
+  fill: url(#sphereGradient8);
+}
+#part9 path {
+  fill: url(#sphereGradient9);
+}
+#part10 path {
+  fill: url(#sphereGradient10);
+}
+#part11 path {
+  fill: url(#sphereGradient11);
+}
+#part12 path {
+  fill: url(#sphereGradient12);
+}
+#part13 path {
+  fill: url(#sphereGradient13);
+}
+#part14 path {
+  fill: url(#sphereGradient14);
+}
+#part15 path {
+  fill: url(#sphereGradient15);
+}
+#part16 path {
+  fill: url(#sphereGradient16);
+}
+#part17 path {
+  fill: url(#sphereGradient17);
+}
+#part18 path {
+  fill: url(#sphereGradient18);
+}
+#part19 path {
+  fill: url(#sphereGradient19);
+}
+#part20 path {
+  fill: url(#sphereGradient20);
+}
+#part21 path {
+  fill: url(#sphereGradient21);
 }
