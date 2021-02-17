@@ -29,10 +29,18 @@ p {
     color: white;
 }
 
-.btn_row button {
+.color_row button {
+    text-align: center;
     width: 100%;
 }
 
+.color_row p {
+    color: white;
+}
+
+.btn_col button {
+    width: 100px;
+}
 
 /*퍼온 거*/
 body {

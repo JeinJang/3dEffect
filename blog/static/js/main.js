@@ -1,21 +1,13 @@
 $(document).ready(function () {
 
-  $(document).on('click', '#btn1', function () {
-    $('.color1').attr('stop-color', '#FF927E')
-    $('.color2').attr('stop-color', '#FECAB7')
-    $('.color3').attr('stop-color', '#C9E6F8')
-  })
+  $(document).on('click', '#submit', function () {
+    let inner_color = $('#input_color1').val()
+    let middle_color = $('#input_color2').val()
+    let outer_color = $('#input_color3').val()
 
-  $(document).on('click', '#btn2', function () {
-    $('.color1').attr('stop-color', '#EC5B28')
-    $('.color2').attr('stop-color', '#868388')
-    $('.color3').attr('stop-color', '#35A5D3')
-  })
-
-  $(document).on('click', '#btn3', function () {
-    $('.color1').attr('stop-color', '#69C8FF')
-    $('.color2').attr('stop-color', '#9FE2FF')
-    $('.color3').attr('stop-color', '#FFDEFD')
+    $('.color1').attr('stop-color', '#' + inner_color.toString())
+    $('.color2').attr('stop-color', '#' + middle_color.toString())
+    $('.color3').attr('stop-color', '#' + outer_color.toString())
   })
 
     function fitElementToParent(el, padding) {
